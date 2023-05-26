@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="flex justify-between">
+        <header className="max-w-screen-xl mx-auto flex justify-between">
           <h1 className="p-4 text-2xl font-bold">HJ&prime;s Blog</h1>
           <nav className="p-4 space-x-4">
             <Link href="">home</Link>
