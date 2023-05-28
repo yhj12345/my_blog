@@ -1,11 +1,10 @@
-import React from "react";
+import ContactMe from "@/components/ContactMe";
 
 const page = () => {
   return (
     <div className="w-full">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center">
-        <h1 className="text-2xl font-bold">Contact Me</h1>
-        <p>ghwnsdl999@naver.com</p>
+        <ContactMe />
       </div>
     </div>
   );
