@@ -1,6 +1,8 @@
+import { getFeaturedPosts } from "@/app/api/posts";
 import Card from "./Card";
 
 const FeaturedPosts = () => {
+  const featuredPosts = getFeaturedPosts();
   return (
     <div className="max-w-screen-xl mx-auto">
       <h3 className="font-bold">Featured Posts</h3>
