@@ -4,7 +4,7 @@ import path from "path";
 export interface Post {
   title: string;
   description: string;
-  date: Date;
+  date: string;
   category: string;
   path: string;
   featured: boolean;
