@@ -6,7 +6,7 @@ const YouMayLike = async () => {
   const nonFeaturedPosts = await getNonFeaturedPosts();
 
   return (
-    <div>
+    <div className="mt-8">
       <h3 className="font-bold">You may like</h3>
       <MultiCarousel>
         {nonFeaturedPosts.map((post, idx) => {
