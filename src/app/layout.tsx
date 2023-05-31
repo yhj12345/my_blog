@@ -16,10 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <header className="max-w-screen-xl mx-auto flex justify-between">
-          <h1 className="p-4 text-2xl font-bold">HJ&prime;s Blog</h1>
-          <nav className="p-4 space-x-4">
+      <body className="max-w-screen-xl mx-auto">
+        <header className="flex justify-between">
+          <h1 className="pt-4 text-2xl font-bold">
+            <Link href="">HJ&prime;s Blog</Link>
+          </h1>
+          <nav className="pt-4 space-x-4">
             <Link href="">home</Link>
             <Link href="/about">about</Link>
             <Link href="/posts">posts</Link>
