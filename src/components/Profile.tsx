@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const Profile = () => {
   const router = useRouter();
   return (
-    <div className="max-w-screen-xl mx-auto flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <Image
         className="rounded-full w-32 h-32 object-cover"
         src={profileImage}
