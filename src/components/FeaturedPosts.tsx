@@ -4,7 +4,7 @@ import Card from "./Card";
 const FeaturedPosts = async () => {
   const featuredPosts = await getFeaturedPosts();
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div>
       <h3 className="font-bold">Featured Posts</h3>
       <div className="grid grid-cols-3 gap-4">
         {featuredPosts.map((post: Post, idx) => {
