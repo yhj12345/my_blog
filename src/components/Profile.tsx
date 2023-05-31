@@ -16,7 +16,7 @@ const Profile = () => {
       <h2 className="text-xl font-bold">Frontend Engineer</h2>
       <p>성장하는 개발자, 윤호준입니다</p>
       <button
-        className="rounded-lg bg-amber-500 p-1 font-bold"
+        className="rounded-lg bg-amber-500 font-bold mt-2 p-1"
         onClick={() => router.push("/contact")}
       >
         Contact Me
