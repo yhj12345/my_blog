@@ -16,19 +16,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-screen-xl mx-auto">
-        <header className="flex justify-between">
-          <h1 className="pt-4 text-2xl font-bold">
-            <Link href="">HJ&prime;s Blog</Link>
-          </h1>
-          <nav className="pt-4 space-x-4">
-            <Link href="">home</Link>
-            <Link href="/about">about</Link>
-            <Link href="/posts">posts</Link>
-            <Link href="/contact">contact</Link>
+      <body>
+        <header>
+          <nav className="max-w-screen-xl mx-auto flex justify-between">
+            <h1 className="pt-4 text-2xl font-bold">
+              <Link href="">HJ&prime;s Blog</Link>
+            </h1>
+            <nav className="pt-4 space-x-4">
+              <Link href="">home</Link>
+              <Link href="/about">about</Link>
+              <Link href="/posts">posts</Link>
+              <Link href="/contact">contact</Link>
+            </nav>
           </nav>
         </header>
-        {children}
+        <div className="min-h-screen max-w-screen-xl mx-auto">{children}</div>
+        <footer className="max-w-screen-xl mx-auto bg-black text-white text-center mt-4">
+          Don&prime;t forget to CODE your DREAM | All Right Reserved.
+        </footer>
       </body>
     </html>
   );

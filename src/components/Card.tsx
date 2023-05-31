@@ -14,11 +14,11 @@ const Card = ({ post }: CardProps) => {
         src={`/images/posts/${post.path}.png`}
         alt="thumbnail"
       />
-      <div className="text-right">{post.date}</div>
       <div className="flex flex-col items-center">
-        <div>{post.title}</div>
-        <div>{post.description}</div>
-        <div>{post.category}</div>
+        <time className="self-end">{post.date}</time>
+        <h2 className="font-bold">{post.title}</h2>
+        <p className="w-full truncate text-center">{post.description}</p>
+        <span className="bg-green-100 px-2 my-2">{post.category}</span>
       </div>
     </div>
   );
