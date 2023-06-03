@@ -1,16 +1,13 @@
 import { Post, getFeaturedPosts } from "@/app/api/posts";
 import Card from "./Card";
+import GridView from "./GridView";
 
 const FeaturedPosts = async () => {
   const featuredPosts = await getFeaturedPosts();
   return (
     <div className="mt-8">
       <h3 className="font-bold">Featured Posts</h3>
-      <div className="grid grid-cols-3 gap-4">
-        {featuredPosts.map((post: Post, idx) => {
-          return <Card key={idx} post={post} />;
-        })}
-      </div>
+      <GridView posts={featuredPosts} />
     </div>
   );
 };
